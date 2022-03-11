@@ -26,7 +26,7 @@
     --hero-font: 'Limelight', cursive;;
     --flair-font: Marker Felt, fantasy;
     --heading-font: 'Quicksand', 'Open Sans', sans-serif;
-    --main-text-font: ;
+    --main-text-font: 'Montserrat', sans-serif;
 
     /* Dark-Mode */
     /*  --background-color: rgb(42 42 42);   */
@@ -89,7 +89,6 @@ transform: translateY(-150px);
     font-size: 25px;
     letter-spacing: 3px;
     font-variant: small-caps;
-    font-style: oblique;
     text-decoration: none;
 }
 .name-hero a:hover {
@@ -344,6 +343,11 @@ transform: translateY(-150px);
     font-family: var(--heading-font);
     color: var(--main-text-color);
     font-size: 2.5rem;
+}
+
+.welcome-text span {
+    font-family: var(--hero-font);
+    
 }
 
 .welcome-text h1:nth-child(2) {
@@ -619,7 +623,7 @@ input, textarea {
     border-bottom: 1px solid var(--theme-color-main);
     width: 100%;
     font-size: 1.1rem;
-    font-family: var(--font-fam-main);
+    font-family: var(--main-text-font);
 
     padding: 10px;
 }
@@ -666,7 +670,7 @@ textarea {
     padding: .2rem;
     text-align: center;
     transition: .5s;
-    font-family: var(--heading-font);
+    font-family: var(--main-text-font);
     font-size: 1.3em;
     letter-spacing: 1px;
     opacity: .65;
@@ -775,8 +779,20 @@ textarea {
 }
 
 .about-text-container p {
-    padding: 30px;
+    padding: 10px 30px;
+    font-family: var(--main-text-font);
+    font-size: 1.1rem;
   /*  transform: skewX(8deg);   */
+}
+
+.about-text-container span {
+    font-family: var(--hero-font);
+    
+}
+.about-text-container a {
+    text-decoration: underline;
+    color: var(--sec-text-color);
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 950px) {
@@ -807,4 +823,32 @@ textarea {
       /*  width: 100%;
         padding: 0px 0px 30px 0px;  */
     }
+}
+
+
+/********************************************************/
+/*********** Made By */
+
+.made-by {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--hero-font);
+    color: var(--theme-color-sec);
+    margin-bottom: 1rem;
+}
+
+.made-by h1 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+}
+
+.made-by a {
+    font-family: var(--hero-font);
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--theme-color-sec);
+    
 }
