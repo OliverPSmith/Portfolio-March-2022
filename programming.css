@@ -1,0 +1,95 @@
+
+
+/********************************************************/
+/*********** Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/********************************************************/
+/*********** Projects Section */
+
+.p-projects-section {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0rem;
+}
+
+.p-projects-container {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    border: 2px solid var(--theme-color-main);
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px var(--theme-color-sec);
+}
+
+.p-projects-heading-container {
+    width: 80%;
+    display: flex;
+    padding: 0px 30px 30px 30px;
+}
+
+.p-projects-heading-container h1 {
+    font-family: var(--heading-font);
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: var(--main-text-color);
+}
+
+.p-projects {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.p-project {
+    border: 2px solid var(--theme-color-sec);
+    height: 20rem;
+    width: 20rem;
+    margin: 10px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    font-family: var(--heading-font);
+    color: var(--main-text-color);
+   
+}
+
+.p-project:hover {
+    background-color: #07152b;
+    transition: .2s;
+}
+
+.project-name {
+    font-size: 1.2rem;
+}
+
+.project-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-links a {
+    font-size: 18px;
+    padding: 10px;
+    color: var(--main-text-color);
+}
+.project-links a:hover {
+    color: var(--theme-color-sec);
+    transition: .2s;
+}
+
+
