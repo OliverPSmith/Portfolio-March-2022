@@ -76,6 +76,7 @@ main {
 .project-link-container {
     width: 100%;
     margin: 10px 0px;
+
 }
 .project-link-container a {
     padding: 0px 30px 30px 30px;
@@ -125,7 +126,7 @@ main {
     padding: 10px;
     border-radius: 5px;
     background: var(--theme-color-main);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--main-text-font);
 }
 
 @media only screen and (max-width: 999px) {
@@ -242,7 +243,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 
     
 }
