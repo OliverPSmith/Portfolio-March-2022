@@ -125,8 +125,10 @@ main {
     margin: 50px;
     padding: 10px;
     border-radius: 5px;
-    background: var(--theme-color-main);
+    background: var(--theme-color-tert);
     font-family: var(--main-text-font);
+    color: var(--main-text-color);
+    font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 999px) {
@@ -204,11 +206,57 @@ main {
     height: auto;
     width: 100%;
     padding-top: 30px;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
+   
 }
 
+.service {
+  /*  border: 2px solid var(--theme-color-sec); */
+    width: 45%;
+
+    margin: 20px;
+    color: var(--main-text-color);
+
+    background: var(--theme-color-tert);
+    border-radius: 10px;
+
+}
+
+.service-heading {
+    border-bottom: 2px solid var(--theme-color-main);
+    width: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-family: var(--heading-text-color);
+    text-shadow: 1px 1px 1px var(--background-color);
+    letter-spacing: 1.5px;
+}
+
+
+.service-explained {
+    font-size: 1.1rem;
+    padding: 20px;
+    font-family: var(--main-text-font);
+    color: var(--main-text-color);
+}
+
+.service-explained ul {
+    display: flex; 
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.service-explained ul li {
+    padding: 10px;
+}
+
+
+/*
 .services-options p {
     font-size: 1rem;
     margin: 10px;
@@ -217,22 +265,44 @@ main {
     border-radius: 15px;
     background-color: var(--theme-color-main);
     border: 1px solid var(--sec-text-color);
+}   */
+
+@media only screen and (max-width: 1150px) {
+    .service {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .service {
+        width: 100%;
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
+    .services-container {
+        padding: 5px;
+    }
     .services-options {
         justify-content: flex-start;
+        padding-top: 0px;
     }
     .services-heading-container {
         width: 100%;
-        padding: 0px 10px 30px 10px;
+        padding: 30px;
+    }
+
+    .service {
+        width: 100%;
+        margin-top: 60px;
     }
 
 
-    .services-options p {
+  /*  .services-options p {
         margin: 10px;
         padding: 15px;
-    }
+    }   */
 }
 
 
