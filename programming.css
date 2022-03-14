@@ -1,5 +1,4 @@
 
-
 /********************************************************/
 /*********** Main */
 
@@ -7,8 +6,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
-
 
 /********************************************************/
 /*********** Projects Section */
@@ -25,7 +22,7 @@ main {
     padding: 30px;
     border: 2px solid var(--theme-color-main);
     border-radius: 3px;
-    box-shadow: 2px 2px 15px var(--theme-color-sec);
+    box-shadow: 1px 1px 8px var(--theme-color-sec);
 }
 
 .p-projects-heading-container {
@@ -37,7 +34,7 @@ main {
 .p-projects-heading-container h1 {
     font-family: var(--heading-font);
     font-size: 25px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     color: var(--main-text-color);
 }
 
@@ -50,12 +47,11 @@ main {
 }
 
 .p-project {
-    border: 2px solid var(--theme-color-sec);
+    border: 2px solid var(--theme-color-tert);
     height: 20rem;
     width: 20rem;
     margin: 10px;
     border-radius: 15px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,11 +59,10 @@ main {
     padding: 10px 25px;
     font-family: var(--heading-font);
     color: var(--main-text-color);
-   
 }
 
 .p-project:hover {
-    background-color: #07152b;
+    border: 2px solid var(--theme-color-sec);
     transition: .2s;
 }
 
@@ -91,6 +86,5 @@ main {
     color: var(--theme-color-sec);
     transition: .2s;
 }
-
 
 
